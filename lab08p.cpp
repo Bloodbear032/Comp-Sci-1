@@ -36,7 +36,7 @@ int main() {
 	//descending
 	// at the start of the decending loop the lowest number of spaces is 1.
 	spaces = 1;
-	//The userinput is -2 as you are subtracting a star from 2 sides of the diamond.
+	//reduces the number of star from the ascending loop by 2 loops.
 	stars -= 4;
 	//standard accumilation for statement
 	for (int j = 0; j < userinput; j++) {
