@@ -17,7 +17,7 @@ int main() {
 int getInteger() {
 	int value;
 	do {
-		cout << "Please enter an integer between 1-10";
+		cout << "Please enter an integer between 1-10: ";
 		cin >> value;
 	} while (value > 10 || value < 1);
 	return value;
