@@ -3,7 +3,7 @@ using namespace std;
 
 //function calls
 int getInteger(int value);
-int doMultiplication(int value_a, int value_b, int value_c);
+int doMultiplication(int value_a, int &value_b, int &value_c);
 
 int main() {
 	int a = 0, b = 0, c = 0;
@@ -20,7 +20,7 @@ int getInteger(int value) {
 	return value;
 }
 
-int doMultiplication(int value_a, int value_b, int value_c)
+int doMultiplication(int value_a, int &value_b, int &value_c)
 {
 	int multiplication_value_for_b, multiplication_value_for_c;
 	multiplication_value_for_b = value_a * value_b;
