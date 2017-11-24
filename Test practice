@@ -2,19 +2,20 @@
 using namespace std;
 
 //function calls
-int getInteger(int value);
+int getInteger();
 int doMultiplication(int value_a, int &value_b, int &value_c);
 
 int main() {
-	int a = 0, b = 0, c = 0;
-	a = getInteger(a);
-	b = getInteger(b);
-	c = getInteger(c);
+	int a, b, c;
+	a = getInteger();
+	b = getInteger();
+	c = getInteger();
 	doMultiplication(a, b, c);
 	cout << a << ", " << b << ", " << c << "." << endl;
 }
 
-int getInteger(int value) {
+int getInteger() {
+	int value;
 	cout << "Please enter an integer";
 	cin >> value;
 	return value;
