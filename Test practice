@@ -3,7 +3,7 @@ using namespace std;
 
 //function calls
 int getInteger();
-int doMultiplication(int value_a, int &value_b, int &value_c);
+void doMultiplication(int value_a, int &value_b, int &value_c);
 
 int main() {
 	int a, b, c;
@@ -16,15 +16,15 @@ int main() {
 
 int getInteger() {
 	int value;
-	cout << "Please enter an integer";
-	cin >> value;
+	do {
+		cout << "Please enter an integer between 1-10";
+		cin >> value;
+	} while (value > 10 || value < 1);
 	return value;
 }
 
-int doMultiplication(int value_a, int &value_b, int &value_c)
+void doMultiplication(int value_a, int &value_b, int &value_c)
 {
-	int multiplication_value_for_b, multiplication_value_for_c;
-	multiplication_value_for_b = value_a * value_b;
-	multiplication_value_for_c = value_a * value_c;
-	return 0;
+	value_b = value_a * value_b;
+	value_c = value_a * value_c;
 }
