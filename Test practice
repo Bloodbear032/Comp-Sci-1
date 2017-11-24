@@ -1,26 +1,29 @@
 #include <iostream>
+using namespace std;
 
 //function calls
-int getInteger (int value);
-int doMultiplication (int value_a, int value_b, value_c);
+int getInteger(int value);
+int doMultiplication(int value_a, int value_b, int value_c);
 
-int main(){
-int a, b, c;
-a = getInteger();
-b = getInteger();
-c = getInteger();
-doMultiplication (a, b, c);
-cout << a <<", " << b << ", " << c << "."<< endl;
+int main() {
+	int a = 0, b = 0, c = 0;
+	a = getInteger(a);
+	b = getInteger(b);
+	c = getInteger(c);
+	doMultiplication(a, b, c);
+	cout << a << ", " << b << ", " << c << "." << endl;
 }
 
-int getInteger (int value){
-cout << "Please enter an integer";
-cin >> value;
-return value;
+int getInteger(int value) {
+	cout << "Please enter an integer";
+	cin >> value;
+	return value;
 }
 
-int doMultiplication (int value_a, int &value_b, &value_c){
-int multiplication_value_for_b, multiplication_value_for_c
-multiplication_value_for_b = value_a * value_b;
-multiplication_value_for_c = value_a * value_c;
+int doMultiplication(int value_a, int value_b, int value_c)
+{
+	int multiplication_value_for_b, multiplication_value_for_c;
+	multiplication_value_for_b = value_a * value_b;
+	multiplication_value_for_c = value_a * value_c;
+	return 0;
 }
