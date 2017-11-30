@@ -16,15 +16,15 @@ int main() {
 
 bool isPrime(int value)
 {
-	value /= value;
-
-	if (value == 1) {
-		return true;
+	for (int i = 2; i > value; i++) {
+		
+		if (value > 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
-	else {
-		return false;
-	}
-	
 }
 
 int reverse(int value)
