@@ -16,9 +16,10 @@ int main() {
 
 bool isPrime(int value)
 {
-	for (int i = 2; i > value; i++) {
-		
-		if (value > 0) {
+	for (int i = 2; i < value; i++) {
+		int test = value;
+		test /= i;
+		if (test == 1) {
 			return true;
 		}
 		else {
