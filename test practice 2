@@ -18,7 +18,7 @@ bool isPrime(int value)
 {
 	value /= value;
 
-	if (value > 1) {
+	if (value == 1) {
 		return true;
 	}
 	else {
